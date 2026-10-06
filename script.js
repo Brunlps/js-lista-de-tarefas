@@ -1,5 +1,5 @@
 // CRUD de lista de tarefas
-let tarefas = []
+let tarefas = [];
 
 // Função para adicionar tarefas
 function criarTarefa(tarefa) {

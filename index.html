@@ -4,35 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<title>ToDo List</title>
-</head>
 
-<body class="bg-gray-100">
+<body class="bg-slate-200 h-screen flex justify-center items-center">
+    <div class="bg-white shadow-lg rounded-lg p-4">
+        <h1 class="font-bold text-xl mb-6">Seja bem-vindo(a)</h1>
+        <form class="flex flex-col w-80">
+            <label for="email" class="uppercase text-xs font-bold mb-2 block">Email</label>
+            <input type="email" placeholder="email@email.com" class="pl-3 h-10 border-2 border-slate-400 focus:border-purple-600 duration-150 rounded outline-none mb-4" required />
+            <label for="senha" class="uppercase text-xs font-bold mb-2 block">Senha</label>
+            <input type="password" placeholder="********" class="pl-3 h-10 border-2 border-slate-400 focus:border-purple-600 duration-150 rounded outline-none mb-4" required />
+            <a href="/cadastrar.html" class="my-5">Cadastre-se</a>
+            <button type="submit" class="w-full h-10 rounded bg-purple-400 hover:bg-purple-600 duration-200 hover:text-white font-bold">Logar</button>
 
-     <header class="flex items-center py-4 px-15 bg-gradient-to-r from-purple-900 via-purple-600 to-purple-900">
-        <input onkeyup="filtrarTarefas(event.target.value)" type="text" placeholder="Pesquisar" class="w-100 h-10 pl-4 mx-2 rounded bg-white"/>
-        
-        <button class="leading-10 bg-purple-800 rounded px-4 font-bold text-white duration-200 cursor-pointer hover:bg-purple-400 hover:text-black">Buscar Tarefa</button>
-    </header>
-
-    <div class="min-h-screen flex items-start justify-center pt-20">
-        <div class="bg-white rounded-2xl shadow-lg p-8 w-full max-w-md" id="form-tarefa">
-
-            <h1 class="text-2xl font-bold text-centr text-gray-800 mb-6">Lista De Tarefas</h1>
-
-            <form id="" class="flex gap-2 mb-6">
-
-                <input onkeyup="criarTarefa(event.target.value)" type="text" id="input-tarefa" placeholder="Digite uma tarefa" class="flex-1 border border-x-gray-300 rounded-lg px-4 focus:outline-none focus:border-blue-500"/>
-
-                <button type="submit" class="bg-blue-500 text-white px-4py2
-                rounded-lg p-2 hover:border-blue-600 cursor-pointer">Adicionar</button>
-            </form>
-            <ul id="lista-tarefas" class="space-y-2"></ul>
-        </div>
+        </form>
     </div>
-    <script src="script.js"></script>
 </body>
 
 </html>

@@ -9,7 +9,7 @@ let tarefas = [
     "titulo": "Definir o modelo da tarefa",
     "descricao": "Separar o formato de entrada (sem id) do formato de saída (com id)."
   },
-  {
+  
     "id": 3,
     "titulo": "Criar a rota de listar tarefas",
     "descricao": ""
